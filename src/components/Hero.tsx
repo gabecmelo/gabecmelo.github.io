@@ -67,7 +67,7 @@ export default function Hero() {
               Contato
             </a>
             <a
-              href="/gabriel-melo-resume-2025.pdf"
+              href="/Gabriel_Cabral_Melo_Fullstack.pdf"
               download
               className="flex items-center gap-2 px-5 py-2.5 border border-accent text-accent hover:bg-accent/10 font-mono text-sm rounded transition-colors"
             >
