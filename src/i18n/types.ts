@@ -19,6 +19,7 @@ export interface Translations {
     role: string
     description: string
     cta: { contact: string; resume: string }
+    resume: string
   }
   about: {
     heading: string

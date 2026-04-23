@@ -15,6 +15,7 @@ export const pt: Translations = {
     description:
       '3+ anos construindo aplicações modernas com React, Angular, Vue e Node.js. Tech Lead em projetos de alta escala, CI/CD e AI\u2011Assisted Development.',
     cta: { contact: 'Contato', resume: 'Currículo' },
+    resume: "/Gabriel_Cabral_Melo_PT.pdf",
   },
   about: {
     heading: 'sobre-mim',

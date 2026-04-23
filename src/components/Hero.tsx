@@ -67,7 +67,7 @@ export default function Hero() {
               {t.hero.cta.contact}
             </a>
             <a
-              href="/Gabriel_Cabral_Melo_Fullstack.pdf"
+              href={t.hero.resume}
               download
               className="flex items-center gap-2 px-5 py-2.5 border border-accent text-accent hover:bg-accent/10 font-mono text-sm rounded transition-colors"
             >
