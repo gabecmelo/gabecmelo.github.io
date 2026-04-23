@@ -1,19 +1,21 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
-
-const navLinks = [
-  { href: '#about', label: 'sobre' },
-  { href: '#experience', label: 'experiência' },
-  { href: '#projects', label: 'projetos' },
-  { href: '#skills', label: 'skills' },
-  { href: '#education', label: 'formação' },
-  { href: '#contact', label: 'contato' },
-]
+import { useTranslation } from '../i18n/context'
 
 export default function Navbar() {
+  const { lang, toggle, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('')
+
+  const navLinks = [
+    { href: '#about', label: t.nav.about },
+    { href: '#experience', label: t.nav.experience },
+    { href: '#projects', label: t.nav.projects },
+    { href: '#skills', label: t.nav.skills },
+    { href: '#education', label: t.nav.education },
+    { href: '#contact', label: t.nav.contact },
+  ]
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -36,7 +38,7 @@ export default function Navbar() {
       if (el) observer.observe(el)
     })
     return () => observer.disconnect()
-  }, [])
+  })
 
   const handleNavClick = (href: string) => {
     setIsOpen(false)
@@ -75,6 +77,19 @@ export default function Navbar() {
               </button>
             </li>
           ))}
+
+          {/* Language toggle */}
+          <li>
+            <button
+              onClick={toggle}
+              className="font-mono text-sm flex items-center gap-1 border border-border rounded px-2 py-0.5 hover:border-accent/50 transition-colors"
+              aria-label="Toggle language"
+            >
+              <span className={lang === 'pt' ? 'text-accent' : 'text-muted'}>PT</span>
+              <span className="text-border">|</span>
+              <span className={lang === 'en' ? 'text-accent' : 'text-muted'}>EN</span>
+            </button>
+          </li>
         </ul>
 
         {/* Mobile toggle */}
@@ -104,6 +119,17 @@ export default function Navbar() {
                 </button>
               </li>
             ))}
+            {/* Language toggle mobile */}
+            <li>
+              <button
+                onClick={toggle}
+                className="font-mono text-sm flex items-center gap-1 border border-border rounded px-2 py-0.5 hover:border-accent/50 transition-colors"
+              >
+                <span className={lang === 'pt' ? 'text-accent' : 'text-muted'}>PT</span>
+                <span className="text-border">|</span>
+                <span className={lang === 'en' ? 'text-accent' : 'text-muted'}>EN</span>
+              </button>
+            </li>
           </ul>
         </div>
       )}
