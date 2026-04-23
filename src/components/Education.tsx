@@ -3,24 +3,31 @@ import { motion, useInView } from 'framer-motion'
 import { GraduationCap, BookOpen } from 'lucide-react'
 import SectionHeading from './SectionHeading'
 import { education } from '../data/education'
+import { useTranslation } from '../i18n/context'
 
 export default function Education() {
+  const { t } = useTranslation()
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
-  const academic = education.filter(e => e.type === 'academic')
-  const courses = education.filter(e => e.type === 'course')
+  const academic = education
+    .map((e, i) => ({ ...e, degree: t.education.items[i].degree }))
+    .filter(e => e.type === 'academic')
+
+  const courses = education
+    .map((e, i) => ({ ...e, degree: t.education.items[i].degree }))
+    .filter(e => e.type === 'course')
 
   return (
     <section id="education" className="py-24 px-6 max-w-6xl mx-auto" ref={ref}>
-      <SectionHeading>formação</SectionHeading>
+      <SectionHeading>{t.education.heading}</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-10">
         {/* Academic */}
         <div>
           <h3 className="flex items-center gap-2 font-mono text-sm text-accent font-semibold mb-4">
             <GraduationCap size={16} />
-            Acadêmica
+            {t.education.sections.academic}
           </h3>
           <div className="space-y-4">
             {academic.map((item, i) => (
@@ -43,7 +50,7 @@ export default function Education() {
         <div>
           <h3 className="flex items-center gap-2 font-mono text-sm text-accent font-semibold mb-4">
             <BookOpen size={16} />
-            Cursos & Certificações
+            {t.education.sections.courses}
           </h3>
           <div className="space-y-4">
             {courses.map((item, i) => (

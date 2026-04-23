@@ -2,37 +2,23 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Mail, Phone, Github, Linkedin, Send } from 'lucide-react'
 import SectionHeading from './SectionHeading'
+import { useTranslation } from '../i18n/context'
 
 const contactLinks = [
-  {
-    Icon: Mail,
-    label: 'contatogabemelo@gmail.com',
-    href: 'mailto:contatogabemelo@gmail.com',
-  },
-  {
-    Icon: Phone,
-    label: '(44) 99113-0870',
-    href: 'tel:+5544991130870',
-  },
-  {
-    Icon: Github,
-    label: 'github.com/gabecmelo',
-    href: 'https://github.com/gabecmelo',
-  },
-  {
-    Icon: Linkedin,
-    label: 'linkedin.com/in/gabrielc-melo',
-    href: 'https://linkedin.com/in/gabrielc-melo',
-  },
+  { Icon: Mail, label: 'contatogabemelo@gmail.com', href: 'mailto:contatogabemelo@gmail.com' },
+  { Icon: Phone, label: '(44) 99113-0870', href: 'tel:+5544991130870' },
+  { Icon: Github, label: 'github.com/gabecmelo', href: 'https://github.com/gabecmelo' },
+  { Icon: Linkedin, label: 'linkedin.com/in/gabrielc-melo', href: 'https://linkedin.com/in/gabrielc-melo' },
 ]
 
 export default function Contact() {
+  const { t } = useTranslation()
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
     <section id="contact" className="py-24 px-6 max-w-6xl mx-auto" ref={ref}>
-      <SectionHeading>contato</SectionHeading>
+      <SectionHeading>{t.contact.heading}</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
@@ -42,16 +28,14 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-muted text-lg leading-relaxed mb-6">
-            Estou aberto a novas oportunidades, projetos freelance e conversas
-            sobre tecnologia. Se você tem um projeto em mente ou quer trocar uma
-            ideia, pode me chamar!
+            {t.contact.description}
           </p>
           <a
             href="mailto:contatogabemelo@gmail.com"
             className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-light text-white font-mono text-sm rounded transition-colors"
           >
             <Send size={16} />
-            Enviar mensagem
+            {t.contact.cta}
           </a>
         </motion.div>
 

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, FileText, ArrowDown } from 'lucide-react'
+import { useTranslation } from '../i18n/context'
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -8,6 +9,8 @@ const fadeUp = (delay = 0) => ({
 })
 
 export default function Hero() {
+  const { t } = useTranslation()
+
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -24,7 +27,7 @@ export default function Hero() {
             {...fadeUp(0.1)}
             className="font-mono text-accent text-sm mb-4"
           >
-            Olá, mundo! Eu sou
+            {t.hero.greeting}
           </motion.p>
 
           <motion.h1
@@ -40,17 +43,14 @@ export default function Hero() {
             {...fadeUp(0.3)}
             className="font-mono text-lg sm:text-xl text-muted mb-2"
           >
-            {'>'} Desenvolvedor{' '}
-            <span className="text-accent">Fullstack</span>
+            {'>'} <span className="text-accent">{t.hero.role}</span>
           </motion.p>
 
           <motion.p
             {...fadeUp(0.4)}
             className="text-muted text-base leading-relaxed mb-8 max-w-md"
           >
-            3+ anos construindo aplicações modernas com React, Angular, Vue e
-            Node.js. Tech Lead em projetos de alta escala, CI/CD e
-            AI&#8209;Assisted Development.
+            {t.hero.description}
           </motion.p>
 
           {/* CTA buttons */}
@@ -64,7 +64,7 @@ export default function Hero() {
               className="flex items-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-light text-white font-mono text-sm rounded transition-colors"
             >
               <Mail size={16} />
-              Contato
+              {t.hero.cta.contact}
             </a>
             <a
               href="/Gabriel_Cabral_Melo_Fullstack.pdf"
@@ -72,7 +72,7 @@ export default function Hero() {
               className="flex items-center gap-2 px-5 py-2.5 border border-accent text-accent hover:bg-accent/10 font-mono text-sm rounded transition-colors"
             >
               <FileText size={16} />
-              Currículo
+              {t.hero.cta.resume}
             </a>
           </motion.div>
 

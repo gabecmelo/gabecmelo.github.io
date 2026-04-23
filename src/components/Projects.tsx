@@ -3,26 +3,33 @@ import { motion, useInView } from 'framer-motion'
 import { Github, ExternalLink, Construction, Rocket } from 'lucide-react'
 import SectionHeading from './SectionHeading'
 import { projects } from '../data/projects'
-import type { Project } from '../types'
+import { useTranslation } from '../i18n/context'
+import type { ProjectStructure } from '../types'
 
-const statusConfig: Record<Project['status'], { label: string; color: string; Icon: typeof Rocket }> = {
-  live: { label: 'Live', color: 'text-green-400 border-green-400/30 bg-green-400/10', Icon: Rocket },
-  wip: { label: 'Em testes', color: 'text-yellow-400 border-yellow-400/30 bg-yellow-400/10', Icon: Construction },
-  dev: { label: 'Em desenvolvimento', color: 'text-blue-400 border-blue-400/30 bg-blue-400/10', Icon: Construction },
+type Status = ProjectStructure['status']
+const statusIcons: Record<Status, typeof Rocket> = {
+  live: Rocket,
+  wip: Construction,
+  dev: Construction,
 }
 
 export default function Projects() {
+  const { t } = useTranslation()
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
     <section id="projects" className="py-24 px-6 max-w-6xl mx-auto" ref={ref}>
-      <SectionHeading>projetos</SectionHeading>
+      <SectionHeading>{t.projects.heading}</SectionHeading>
 
       <div className="grid sm:grid-cols-2 gap-6">
         {projects.map((project, i) => {
-          const status = statusConfig[project.status]
-          const StatusIcon = status.Icon
+          const StatusIcon = statusIcons[project.status]
+          const statusColors: Record<Status, string> = {
+            live: 'text-green-400 border-green-400/30 bg-green-400/10',
+            wip: 'text-yellow-400 border-yellow-400/30 bg-yellow-400/10',
+            dev: 'text-blue-400 border-blue-400/30 bg-blue-400/10',
+          }
           return (
             <motion.div
               key={project.name}
@@ -36,14 +43,14 @@ export default function Projects() {
                 <h3 className="font-mono font-bold text-text text-base group-hover:text-accent transition-colors">
                   {project.name}
                 </h3>
-                <span className={`flex items-center gap-1 text-xs font-mono px-2 py-0.5 rounded border shrink-0 ${status.color}`}>
+                <span className={`flex items-center gap-1 text-xs font-mono px-2 py-0.5 rounded border shrink-0 ${statusColors[project.status]}`}>
                   <StatusIcon size={11} />
-                  {status.label}
+                  {t.projects.status[project.status]}
                 </span>
               </div>
 
               <p className="text-muted text-sm leading-relaxed mb-4 flex-1">
-                {project.description}
+                {t.projects.items[i].description}
               </p>
 
               {/* Tags */}
@@ -63,7 +70,7 @@ export default function Projects() {
                     className="flex items-center gap-1.5 text-muted hover:text-accent text-xs font-mono transition-colors"
                   >
                     <Github size={14} />
-                    Código
+                    {t.projects.links.code}
                   </a>
                 )}
                 {project.live && (
@@ -74,11 +81,11 @@ export default function Projects() {
                     className="flex items-center gap-1.5 text-muted hover:text-accent text-xs font-mono transition-colors"
                   >
                     <ExternalLink size={14} />
-                    Ver live
+                    {t.projects.links.viewLive}
                   </a>
                 )}
                 {!project.github && !project.live && (
-                  <span className="text-muted/50 text-xs font-mono">repositório privado</span>
+                  <span className="text-muted/50 text-xs font-mono">{t.projects.links.private}</span>
                 )}
               </div>
             </motion.div>
