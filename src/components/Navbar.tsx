@@ -1,12 +1,17 @@
 import { useState, useEffect } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useTranslation } from '../i18n/context'
+import LangHint from './LangHint'
 
 export default function Navbar() {
   const { lang, toggle, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('')
+  const [showHint, setShowHint] = useState(
+    () => !localStorage.getItem('lang-hint-seen'),
+  )
 
   const navLinks = [
     { href: '#about', label: t.nav.about },
@@ -40,10 +45,20 @@ export default function Navbar() {
     return () => observer.disconnect()
   })
 
+  const dismissHint = () => {
+    localStorage.setItem('lang-hint-seen', '1')
+    setShowHint(false)
+  }
+
   const handleNavClick = (href: string) => {
     setIsOpen(false)
     const el = document.querySelector(href)
     el?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleHamburgerClick = () => {
+    if (showHint) dismissHint()
+    setIsOpen(v => !v)
   }
 
   return (
@@ -92,14 +107,26 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile toggle */}
-        <button
-          className="md:hidden text-muted hover:text-accent transition-colors"
-          onClick={() => setIsOpen(v => !v)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        {/* Mobile hamburger + hint balloon */}
+        <div className="md:hidden relative">
+          {/* Yellow blinking dot */}
+          {showHint && (
+            <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-yellow-400 animate-blink-dot pointer-events-none" />
+          )}
+
+          <button
+            className="text-muted hover:text-accent transition-colors p-1"
+            onClick={handleHamburgerClick}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+
+          {/* Hint balloon */}
+          <AnimatePresence>
+            {showHint && <LangHint onDismiss={dismissHint} />}
+          </AnimatePresence>
+        </div>
       </nav>
 
       {/* Mobile drawer */}

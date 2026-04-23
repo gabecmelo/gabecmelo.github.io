@@ -30,6 +30,32 @@
   }
 }
 
+@layer utilities {
+  .animate-blink-border {
+    animation: blink-border 1.4s ease-in-out infinite;
+  }
+
+  .animate-blink-dot {
+    animation: blink-dot 1.0s ease-in-out infinite;
+  }
+}
+
+@keyframes blink-border {
+  0%, 100% {
+    border-color: rgba(250, 204, 21, 0.7);
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.18);
+  }
+  50% {
+    border-color: rgba(250, 204, 21, 0.15);
+    box-shadow: none;
+  }
+}
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.1; }
+}
+
 @layer components {
   .section-heading {
     @apply font-mono text-3xl font-bold mb-12;
