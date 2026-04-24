@@ -31,7 +31,7 @@ export const experience: ExperienceStructure[] = [
   },
   {
     company: 'Trybe',
-    period: '01/2024 - 12/2024',
+    period: '01/2024 - 05/2024',
     location: 'Remoto',
     tags: ['JavaScript', 'TypeScript', 'React'],
   },
