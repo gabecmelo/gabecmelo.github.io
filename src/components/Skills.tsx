@@ -58,6 +58,7 @@ const skillsByGroup: SkillItem[][] = [
     { name: 'Testing Library', Icon: SiReact, color: '#E33332' },
     { name: 'Stryker / Mutation', color: '#8b949e' },
     { name: 'Gherkin / BDD', color: '#8b949e' },
+    { name: 'Pest PHP', color: '#8b949e' },
   ],
   // Cloud & DevOps
   [
@@ -67,11 +68,13 @@ const skillsByGroup: SkillItem[][] = [
     { name: 'AWS', Icon: FaAws, color: '#FF9900' },
     { name: 'Nginx', Icon: SiNginx, color: '#009639' },
     { name: 'Linux', Icon: SiLinux, color: '#FCC624' },
+    { name: 'Oracle Cloud', color: '#F80000' },
   ],
   // AI & Game Dev
   [
     { name: 'Claude Code', Icon: VscCode, color: '#a855f7' },
     { name: 'Codex CLI', Icon: VscCode, color: '#8b949e' },
+    { name: 'Claude Design', Icon: VscCode, color: '#c084fc' },
     { name: 'RAG Pipelines', color: '#8b949e' },
     { name: 'Lua / Roblox', Icon: SiLua, color: '#00007C' },
   ],
