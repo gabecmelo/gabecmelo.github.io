@@ -157,4 +157,10 @@ export const pt: Translations = {
       'Estou aberto a novas oportunidades, projetos freelance e conversas sobre tecnologia. Se você tem um projeto em mente ou quer trocar uma ideia, pode me chamar!',
     cta: 'Enviar mensagem',
   },
+  hint: {
+    l1: '// wanna see in English? 👀',
+    l2: '"EN"', 
+    l3: '// TOGGLE IT IN MENUUU  ↑',
+    l4: '// the resume also change 😉',
+  },
 }

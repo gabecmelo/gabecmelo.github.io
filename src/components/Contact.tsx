@@ -8,7 +8,7 @@ const contactLinks = [
   { Icon: Mail, label: 'contatogabemelo@gmail.com', href: 'mailto:contatogabemelo@gmail.com' },
   { Icon: Phone, label: '(44) 99113-0870', href: 'tel:+5544991130870' },
   { Icon: Github, label: 'github.com/gabecmelo', href: 'https://github.com/gabecmelo' },
-  { Icon: Linkedin, label: 'linkedin.com/in/gabrielc-melo', href: 'https://linkedin.com/in/gabrielc-melo' },
+  { Icon: Linkedin, label: 'linkedin.com/in/gabrielc-melo', href: 'https://linkedin.com/in/gabrielc-melo' }, // TODO: linkedin com param (?locale=pt-BR) se linguagem estiver em pt-br
 ]
 
 export default function Contact() {

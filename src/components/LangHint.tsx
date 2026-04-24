@@ -7,26 +7,21 @@ interface LangHintProps {
 }
 
 export default function LangHint({ onDismiss }: LangHintProps) {
-  const { lang } = useTranslation()
-
-  const hint =
-    lang === 'pt'
-      ? { l1: '// 🌐 also in English', l2: '"EN" available', l3: '// toggle in menu  ↑' }
-      : { l1: '// 🌐 também em Português', l2: '"PT" disponível', l3: '// menu  ↑' }
+  const { t } = useTranslation()
 
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.85, y: -6 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.85, y: -6 }}
-      transition={{ duration: 0.22, ease: 'easeOut' }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
       className="absolute top-10 right-0 z-50 w-52"
     >
       {/* Arrow pointing up toward hamburger */}
-      <div className="absolute -top-[7px] right-[10px] w-3 h-3 bg-surface border-t border-r border-yellow-400/70 rotate-[-45deg]" />
+      <div className="absolute -top-[6px] right-[10px] w-3 h-3 bg-surface border-t border-r border-yellow-400/70 rotate-[-45deg] animate-blink-border" />
 
       {/* Code box */}
-      <div className="relative bg-surface border rounded-lg px-3 py-2.5 shadow-lg shadow-yellow-400/10 animate-blink-border">
+      <div className="bg-surface border rounded-lg px-2 pt-4 pb-2.5 border border-yellow-400/50 animate-blink-border">
         {/* Close button */}
         <button
           onClick={onDismiss}
@@ -38,12 +33,14 @@ export default function LangHint({ onDismiss }: LangHintProps) {
 
         {/* Code content */}
         <pre className="font-mono text-[11px] leading-relaxed select-none pr-3">
-          <span className="text-muted">{hint.l1}</span>
+          <span className="text-muted">{t.hint.l1}</span>
           {'\n'}
-          <span className="text-muted">{'lang = '}</span>
-          <span className="text-yellow-400">{hint.l2}</span>
+          <span className="text-blue-300">{'lang'}</span><span>{' = '}</span>
+          <span className="text-yellow-400">{t.hint.l2}</span><span>{';'}</span>
           {'\n'}
-          <span className="text-muted">{hint.l3}</span>
+          <span className="text-muted">{t.hint.l3}</span>
+          {'\n'}
+          <span className="text-muted">{t.hint.l4}</span>
         </pre>
       </div>
     </motion.div>

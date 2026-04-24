@@ -32,11 +32,11 @@
 
 @layer utilities {
   .animate-blink-border {
-    animation: blink-border 1.4s ease-in-out infinite;
+    animation: blink-border 1.5s ease-in-out infinite;
   }
 
   .animate-blink-dot {
-    animation: blink-dot 1.0s ease-in-out infinite;
+    animation: blink-dot 1.5s ease-in-out infinite;
   }
 }
 
