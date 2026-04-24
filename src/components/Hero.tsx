@@ -21,7 +21,6 @@ export default function Hero() {
       className="min-h-screen flex flex-col justify-center px-6 pt-16 max-w-6xl mx-auto"
     >
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Text content */}
         <div>
           <motion.p
             {...fadeUp(0.1)}
@@ -53,7 +52,6 @@ export default function Hero() {
             {t.hero.description}
           </motion.p>
 
-          {/* CTA buttons */}
           <motion.div {...fadeUp(0.5)} className="flex flex-wrap gap-4 mb-8">
             <a
               href="#contact"
@@ -76,7 +74,6 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Social links */}
           <motion.div {...fadeUp(0.6)} className="flex gap-4">
             <a
               href="https://github.com/gabecmelo"
@@ -99,7 +96,6 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Avatar */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -114,7 +110,6 @@ export default function Hero() {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Decorative dots */}
             <div className="absolute -bottom-4 -right-4 w-24 h-24 grid grid-cols-4 gap-1.5 opacity-30">
               {Array.from({ length: 16 }).map((_, i) => (
                 <div key={i} className="w-1.5 h-1.5 rounded-full bg-accent" />
@@ -124,7 +119,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

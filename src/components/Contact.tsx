@@ -21,7 +21,6 @@ export default function Contact() {
       <SectionHeading>{t.contact.heading}</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Text */}
         <motion.div
           initial={{ opacity: 0, x: -24 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -39,7 +38,6 @@ export default function Contact() {
           </a>
         </motion.div>
 
-        {/* Links */}
         <motion.div
           initial={{ opacity: 0, x: 24 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}

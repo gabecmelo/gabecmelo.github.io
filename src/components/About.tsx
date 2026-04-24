@@ -22,7 +22,6 @@ export default function About() {
       <SectionHeading>{t.about.heading}</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-12 items-start">
-        {/* Bio */}
         <motion.div
           initial={{ opacity: 0, x: -24 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -37,7 +36,6 @@ export default function About() {
           ))}
         </motion.div>
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, x: 24 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}

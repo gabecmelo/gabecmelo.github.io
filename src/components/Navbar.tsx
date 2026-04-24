@@ -77,7 +77,6 @@ export default function Navbar() {
           <span className="text-accent">{'/>'}</span>
         </button>
 
-        {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-6">
           {navLinks.map(link => (
             <li key={link.href}>
@@ -93,7 +92,6 @@ export default function Navbar() {
             </li>
           ))}
 
-          {/* Language toggle */}
           <li>
             <button
               onClick={toggle}
@@ -107,9 +105,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile hamburger + hint balloon */}
         <div className="md:hidden relative">
-          {/* Yellow blinking dot */}
           {showHint && (
             <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-yellow-400 animate-blink-dot pointer-events-none" />
           )}
@@ -122,14 +118,12 @@ export default function Navbar() {
             {isOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
 
-          {/* Hint balloon */}
           <AnimatePresence>
             {showHint && <LangHint onDismiss={dismissHint} />}
           </AnimatePresence>
         </div>
       </nav>
 
-      {/* Mobile drawer */}
       {isOpen && (
         <div className="md:hidden bg-surface border-b border-border px-6 py-4">
           <ul className="flex flex-col gap-4">
@@ -146,12 +140,12 @@ export default function Navbar() {
                 </button>
               </li>
             ))}
-            {/* Language toggle mobile */}
             <li>
               <button
                 onClick={toggle}
                 className="font-mono text-sm flex items-center gap-1 border border-border rounded px-2 py-0.5 hover:border-accent/50 transition-colors"
               >
+                {/* TODO: hint em mobile mostrando onde alterna após o usuário abrir pela primeira vez */}
                 <span className={lang === 'pt' ? 'text-accent' : 'text-muted'}>PT</span>
                 <span className="text-border">|</span>
                 <span className={lang === 'en' ? 'text-accent' : 'text-muted'}>EN</span>

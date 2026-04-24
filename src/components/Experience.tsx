@@ -15,7 +15,6 @@ export default function Experience() {
       <SectionHeading>{t.experience.heading}</SectionHeading>
 
       <div className="relative">
-        {/* Vertical line */}
         <div className="absolute left-0 md:left-6 top-0 bottom-0 w-px bg-border" />
 
         <div className="space-y-10">
@@ -29,11 +28,9 @@ export default function Experience() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="relative pl-8 md:pl-16"
               >
-                {/* Timeline dot */}
                 <div className="absolute left-[-4px] md:left-[20px] top-2 w-2.5 h-2.5 rounded-full bg-accent border-2 border-bg" />
 
                 <div className="bg-surface border border-border rounded-lg p-6 hover:border-accent/40 transition-colors">
-                  {/* Header */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                     <div>
                       <h3 className="font-mono font-bold text-text text-base sm:text-lg leading-tight">
@@ -57,7 +54,6 @@ export default function Experience() {
                     <p className="text-muted text-sm mb-4">{tx.description}</p>
                   )}
 
-                  {/* Main bullets */}
                   {tx.bullets.length > 0 && (
                     <ul className="space-y-2 mb-4">
                       {tx.bullets.map((bullet, j) => (
@@ -69,7 +65,6 @@ export default function Experience() {
                     </ul>
                   )}
 
-                  {/* Sub-projects */}
                   {tx.subProjects && item.subProjects && (
                     <div className="space-y-4">
                       {tx.subProjects.map((sub, k) => (
@@ -90,7 +85,6 @@ export default function Experience() {
                     </div>
                   )}
 
-                  {/* Tags */}
                   {item.tags.length > 0 && (
                     <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-border">
                       {item.tags.map(tag => (

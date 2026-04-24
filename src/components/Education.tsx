@@ -23,7 +23,6 @@ export default function Education() {
       <SectionHeading>{t.education.heading}</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-10">
-        {/* Academic */}
         <div>
           <h3 className="flex items-center gap-2 font-mono text-sm text-accent font-semibold mb-4">
             <GraduationCap size={16} />
@@ -46,7 +45,6 @@ export default function Education() {
           </div>
         </div>
 
-        {/* Courses */}
         <div>
           <h3 className="flex items-center gap-2 font-mono text-sm text-accent font-semibold mb-4">
             <BookOpen size={16} />
