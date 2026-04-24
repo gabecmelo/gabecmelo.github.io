@@ -22,12 +22,12 @@ export const en: Translations = {
     bio: [
       "Hi! I'm <strong>Gabriel Cabral Melo</strong>, a Full Stack Software Engineer with over 3 years of experience building scalable applications — from backend to frontend, including infrastructure and technical leadership.",
       'I have solid experience with <accent>React, Angular, Vue, Node.js, NestJS, and TypeScript</accent>, along with RxJS, microservices architecture, performance optimization, accessibility (WCAG), and REST API integration. I also work with <accent>AI-Assisted Development</accent> using Claude Code, Codex CLI, and RAG Pipelines to accelerate delivery without compromising quality.',
-      'As Tech Lead at <strong>Conecta Paraná</strong> and founder of <strong>SoftKoe Games</strong>, I combine product vision with technical execution — defining architecture, running sprints, and mentoring teams.',
+      'As Tech Lead at <strong>Conecta Paraná</strong> and founder of <strong>C&S Softwares</strong>, I combine product vision with technical execution — defining architecture, running sprints, and mentoring teams.',
       'I am pursuing a degree in <strong>Systems Analysis and Development</strong> at UniCesumar and speak Portuguese (native), English, and Spanish.',
     ],
     stats: [
       { value: '3+', label: 'years of experience' },
-      { value: '5', label: 'companies served' },
+      { value: '8', label: 'companies served' },
       { value: '3', label: 'languages' },
       { value: '∞', label: 'passion for learning' },
     ],
@@ -37,9 +37,9 @@ export const en: Translations = {
     remote: 'Remote',
     items: [
       {
-        role: 'Quality Engineering Lead / Full Stack Developer',
+        role: 'Quality Engineering Lead',
         description:
-          'Quality leadership and full stack development on a financial platform with Nuxt 4 and Laravel 12.',
+          'Quality leadership on a financial platform with Nuxt 4 and Laravel 12.',
         bullets: [
           'Performed deep-dive performance audits on Nuxt 4 (Vue.js) and Laravel 12, identifying and mitigating critical bottlenecks related to Big O complexity and memory leaks in global event listeners.',
           'Architected and deployed a test automation infrastructure with Playwright (E2E) and Vitest (unit) + Mutation Testing, achieving over 80% effective code coverage.',
@@ -58,7 +58,7 @@ export const en: Translations = {
           'Architected a full monorepo infrastructure (NestJS + Angular SPA + Flutter) with 4 Docker environments, CI/CD via GitHub Actions, and automated ARM64 deployment on Oracle Cloud VPS, reducing new developer onboarding from days to minutes.',
           'Developed Angular components with RxJS for reactive state management and asynchronous data streams, applying best practices in performance and accessibility (WCAG).',
           'Enforced end-to-end CI/CD pipelines with GitHub Actions (lint, unit tests, e2e, multi-arch builds with QEMU, SSH deploy to GHCR), with branch protection preventing merges without validation.',
-          'Leveraged Claude Code to accelerate deliveries that would take 2–3 weeks to under 2 days of development.',
+          'Leveraged Claude Code to accelerate deliveries that would take 2-3 weeks to under 2 days of development.',
           'Raised test coverage on Orçamento Fácil from 60% to 96% with Stryker (Mutation Testing).',
           'Prototyped interfaces for Orçamento Fácil with Claude Design, accelerating the visual validation cycle and reducing UI rework by 70%.',
           'Implemented AI RAG pipelines in Docker containers (Ralph Loops), creating PRDs and developing features autonomously.',
@@ -87,7 +87,7 @@ export const en: Translations = {
         subProjects: [
           {
             bullets: [
-              'Recovered US$ 70k annually in revenue by mitigating contractual errors through refactoring Node.js cron jobs and Axios/Express integrations, reducing failures by 60% and increasing task reliability by 45%.',
+              'Recovered US$ 5.8k monthly in revenue by mitigating contractual errors through refactoring Node.js cron jobs and Axios/Express integrations, reducing failures by 60% and increasing task reliability by 45%.',
               'Reduced MTTR by 50% and ensured zero-downtime deployments with GitHub Actions, Docker, and Kubernetes.',
               'Developed Node.js auth/log middleware to standardize the microservices architecture, onboarding 3 new services within the first month.',
             ],

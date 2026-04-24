@@ -22,12 +22,12 @@ export const pt: Translations = {
     bio: [
       'Olá! Sou <strong>Gabriel Cabral Melo</strong>, Engenheiro de Software Full Stack com mais de 3 anos de experiência construindo aplicações escaláveis — do backend ao frontend, passando por infraestrutura e liderança técnica.',
       'Tenho experiência sólida com <accent>React, Angular, Vue, Node.js, NestJS e TypeScript</accent>, além de RxJS, arquitetura de microsserviços, otimização de performance, acessibilidade (WCAG) e integração de APIs REST. Atualmente também atuo com <accent>AI-Assisted Development</accent> usando Claude Code, Codex CLI e RAG Pipelines para acelerar entregas sem abrir mão de qualidade.',
-      'Como Tech Lead no <strong>Conecta Paraná</strong> e fundador da <strong>SoftKoe Games</strong>, combino visão de produto com execução técnica — definindo arquitetura, conduzindo sprints e mentorando times.',
+      'Como Tech Lead em projetos como <strong>Conecta Paraná</strong> e fundador da <strong>C&S Softwares</strong> , combino visão de produto com execução técnica — definindo arquitetura, conduzindo sprints e mentorando times.',
       'Sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar e falo Português (nativo), Inglês e Espanhol.',
     ],
     stats: [
       { value: '3+', label: 'anos de experiência' },
-      { value: '5', label: 'empresas atendidas' },
+      { value: '8', label: 'empresas atendidas' },
       { value: '3', label: 'idiomas' },
       { value: '∞', label: 'vontade de aprender' },
     ],
@@ -37,9 +37,9 @@ export const pt: Translations = {
     remote: 'Remoto',
     items: [
       {
-        role: 'Quality Engineer Lead / Desenvolvedor Full Stack',
+        role: 'Quality Engineer Lead',
         description:
-          'Liderança de qualidade e desenvolvimento full stack em plataforma financeira com Nuxt 4 e Laravel 12.',
+          'Liderança de qualidade em plataforma financeira com Nuxt 4 e Laravel 12.',
         bullets: [
           'Realizei auditorias de performance em Nuxt 4 (Vue.js) e Laravel 12, identificando e corrigindo gargalos críticos relacionados à complexidade algorítmica (Big O) e memory leaks em event listeners globais.',
           'Arquitetei e implantei infraestrutura de testes com Playwright (E2E) e Vitest (unitário) + Mutation Testing, atingindo cobertura acima de 80%.',
@@ -58,7 +58,7 @@ export const pt: Translations = {
           'Arquitetei monorepo NestJS + Angular + Flutter com 4 ambientes Docker e CI/CD via GitHub Actions com deploy automático ARM64 em VPS Oracle, reduzindo setup de novos devs de dias para minutos.',
           'Desenvolvi componentes Angular com RxJS para gerenciamento reativo de estado e streams assíncronos, aplicando boas práticas de performance e acessibilidade (WCAG).',
           'Estruturei pipelines CI/CD completas com GitHub Actions (lint, testes unitários, e2e, build multi-arch com QEMU, deploy via SSH ao GHCR), com branch protection impedindo merge sem validação.',
-          'Utilizei Claude Code para acelerar entregas que levariam 2–3 semanas para menos de 2 dias de desenvolvimento.',
+          'Utilizei Claude Code para acelerar entregas que levariam 2-3 semanas para menos de 2 dias de desenvolvimento.',
           'Elevei cobertura de testes do Orçamento Fácil de 60% para 96% com Stryker (Mutation Testing).',
           'Prototipei interfaces do Orçamento Fácil com Claude Design, acelerando o ciclo de validação visual e reduzindo retrabalho de UI em 70%.',
           'Implementei pipelines RAG com IA em Docker (Ralph Loops), criando PRDs e desenvolvendo features de forma agêntica.',
@@ -67,7 +67,7 @@ export const pt: Translations = {
         ],
       },
       {
-        role: 'Founder & Lead Game Developer',
+        role: 'Fundador e Desenvolvedor de Jogos Líder',
         description:
           'Fundador e desenvolvedor líder em estúdio de jogos web e Roblox, liderando roadmap técnico e desenvolvimento de gameplay.',
         bullets: [
@@ -87,7 +87,7 @@ export const pt: Translations = {
         subProjects: [
           {
             bullets: [
-              'Recuperei US$ 70k anuais em receita ao mitigar erros contratuais via refatoração de cron jobs Node.js e integrações Axios/Express, reduzindo falhas em 60% e elevando a confiabilidade das tarefas em 45%.',
+              'Recuperei US$ 5.8k mensais em receita ao mitigar erros contratuais via refatoração de cron jobs Node.js e integrações Axios/Express, reduzindo falhas em 60% e elevando a confiabilidade das tarefas em 45%.',
               'Reduzi MTTR em 50% e garanti deploys zero downtime com GitHub Actions, Docker e Kubernetes.',
               'Desenvolvi middlewares Node.js auth/log para padronizar a arquitetura de microsserviços, integrando 3 novos serviços no primeiro mês.',
             ],
