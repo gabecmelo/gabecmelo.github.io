@@ -4,17 +4,19 @@ import { Mail, Phone, Github, Linkedin, Send } from 'lucide-react'
 import SectionHeading from './SectionHeading'
 import { useTranslation } from '../i18n/context'
 
-const contactLinks = [
-  { Icon: Mail, label: 'contatogabemelo@gmail.com', href: 'mailto:contatogabemelo@gmail.com' },
-  { Icon: Phone, label: '(44) 99113-0870', href: 'tel:+5544991130870' },
-  { Icon: Github, label: 'github.com/gabecmelo', href: 'https://github.com/gabecmelo' },
-  { Icon: Linkedin, label: 'linkedin.com/in/gabrielc-melo', href: 'https://linkedin.com/in/gabrielc-melo' }, // TODO: linkedin com param (?locale=pt-BR) se linguagem estiver em pt-br
-]
-
 export default function Contact() {
-  const { t } = useTranslation()
+  const { t, lang } = useTranslation()
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+
+  const linkedinHref = `https://linkedin.com/in/gabrielc-melo${lang === 'pt' ? '?locale=pt_BR' : ''}`
+
+  const contactLinks = [
+    { Icon: Mail, label: 'contatogabemelo@gmail.com', href: 'mailto:contatogabemelo@gmail.com' },
+    { Icon: Phone, label: '(44) 99113-0870', href: 'tel:+5544991130870' },
+    { Icon: Github, label: 'github.com/gabecmelo', href: 'https://github.com/gabecmelo' },
+    { Icon: Linkedin, label: 'linkedin.com/in/gabrielc-melo', href: linkedinHref },
+  ]
 
   return (
     <section id="contact" className="py-24 px-6 max-w-6xl mx-auto" ref={ref}>
@@ -46,7 +48,7 @@ export default function Contact() {
         >
           {contactLinks.map(({ Icon, label, href }) => (
             <a
-              key={href}
+              key={label}
               href={href}
               target={href.startsWith('http') ? '_blank' : undefined}
               rel={href.startsWith('http') ? 'noreferrer' : undefined}
