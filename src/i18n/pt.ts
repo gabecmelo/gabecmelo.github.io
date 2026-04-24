@@ -11,17 +11,17 @@ export const pt: Translations = {
   },
   hero: {
     greeting: 'Olá, mundo! Eu sou',
-    role: 'Desenvolvedor Fullstack',
+    role: 'Engenheiro de Software Full Stack',
     description:
-      '3+ anos construindo aplicações modernas com React, Angular, Vue e Node.js. Tech Lead em projetos de alta escala, CI/CD e AI\u2011Assisted Development.',
+      '3+ anos construindo aplicações escaláveis com React, Angular, Vue e Node.js/NestJS. Arquitetura full stack, testes automatizados, CI/CD e AI-Assisted Development.',
     cta: { contact: 'Contato', resume: 'Currículo' },
-    resume: "/Gabriel_Cabral_Melo_PT.pdf",
+    resume: '/Gabriel_Cabral_Melo_PT.pdf',
   },
   about: {
     heading: 'sobre-mim',
     bio: [
-      'Olá! Sou <strong>Gabriel Cabral Melo</strong>, desenvolvedor Fullstack com mais de 3 anos de experiência construindo aplicações escaláveis — do backend ao frontend, passando por infraestrutura e liderança técnica.',
-      'Tenho experiência sólida com <accent>React, Angular, Vue, Node.js e NestJS</accent>, além de arquitetura de microsserviços, CI/CD e testes automatizados. Atualmente também atuo com <accent>AI-Assisted Development</accent> usando Claude Code, Codex CLI e RAG Pipelines para acelerar entregas sem abrir mão de qualidade.',
+      'Olá! Sou <strong>Gabriel Cabral Melo</strong>, Engenheiro de Software Full Stack com mais de 3 anos de experiência construindo aplicações escaláveis — do backend ao frontend, passando por infraestrutura e liderança técnica.',
+      'Tenho experiência sólida com <accent>React, Angular, Vue, Node.js, NestJS e TypeScript</accent>, além de RxJS, arquitetura de microsserviços, otimização de performance, acessibilidade (WCAG) e integração de APIs REST. Atualmente também atuo com <accent>AI-Assisted Development</accent> usando Claude Code, Codex CLI e RAG Pipelines para acelerar entregas sem abrir mão de qualidade.',
       'Como Tech Lead no <strong>Conecta Paraná</strong> e fundador da <strong>SoftKoe Games</strong>, combino visão de produto com execução técnica — definindo arquitetura, conduzindo sprints e mentorando times.',
       'Sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar e falo Português (nativo), Inglês e Espanhol.',
     ],
@@ -37,27 +37,32 @@ export const pt: Translations = {
     remote: 'Remoto',
     items: [
       {
-        role: 'Quality Engineer Lead / Desenvolvedor Frontend',
+        role: 'Quality Engineer Lead / Desenvolvedor Full Stack',
         description:
-          'Liderança de qualidade e desenvolvimento frontend em plataforma financeira com Nuxt 4 e Laravel 12.',
+          'Liderança de qualidade e desenvolvimento full stack em plataforma financeira com Nuxt 4 e Laravel 12.',
         bullets: [
-          'Auditorias de performance em Nuxt 4 (Vue.js) e Laravel 12, identificando e corrigindo memory leaks e gargalos de complexidade algorítmica.',
+          'Realizei auditorias de performance em Nuxt 4 (Vue.js) e Laravel 12, identificando e corrigindo gargalos críticos relacionados à complexidade algorítmica (Big O) e memory leaks em event listeners globais.',
           'Arquitetei e implantei infraestrutura de testes com Playwright (E2E) e Vitest (unitário) + Mutation Testing, atingindo cobertura acima de 80%.',
-          'Acelerei a baseline de automação em ~60% utilizando LLMs e programação agêntica para design e execução de casos de teste.',
+          'Acelerei a baseline de automação em ~60% utilizando LLMs e programação agêntica para design e execução de casos de teste complexos.',
           'Produzi 30+ páginas de documentação técnica de QA cobrindo regras financeiras, regulatórias e suítes Gherkin priorizadas por risco.',
           'Conduzi code reviews e testes de API via IA, aumentando satisfação de clientes internos em 30% e reduzindo atrasos em 40%.',
+          'Executei testes manuais e testes de API em funcionalidades novas, validando fluxos críticos de pagamentos, containment e integrações com provedores externos antes de releases.',
         ],
       },
       {
-        role: 'Desenvolvedor Fullstack Sênior & Tech Lead',
+        role: 'Fundador e Engenheiro de Software Full Stack Principal',
         description:
-          'Tech Lead de projetos monorepo com arquitetura DDD, CI/CD completo e times de 6+ desenvolvedores.',
+          'Fundador e Tech Lead de projetos monorepo com arquitetura DDD, CI/CD completo e times de 6+ desenvolvedores.',
         bullets: [
           'Conduzi a arquitetura do Conecta Paraná com DDD, separando contextos entre mobile (Flutter) e web admin (Angular).',
-          'Arquitetei monorepo NestJS + Angular + Flutter com 4 ambientes Docker e CI/CD via GitHub Actions com deploy ARM64 no Oracle Cloud.',
+          'Arquitetei monorepo NestJS + Angular + Flutter com 4 ambientes Docker e CI/CD via GitHub Actions com deploy automático ARM64 em VPS Oracle, reduzindo setup de novos devs de dias para minutos.',
+          'Desenvolvi componentes Angular com RxJS para gerenciamento reativo de estado e streams assíncronos, aplicando boas práticas de performance e acessibilidade (WCAG).',
+          'Estruturei pipelines CI/CD completas com GitHub Actions (lint, testes unitários, e2e, build multi-arch com QEMU, deploy via SSH ao GHCR), com branch protection impedindo merge sem validação.',
           'Utilizei Claude Code para acelerar entregas que levariam 2–3 semanas para menos de 2 dias de desenvolvimento.',
           'Elevei cobertura de testes do Orçamento Fácil de 60% para 96% com Stryker (Mutation Testing).',
+          'Prototipei interfaces do Orçamento Fácil com Claude Design, acelerando o ciclo de validação visual e reduzindo retrabalho de UI em 70%.',
           'Implementei pipelines RAG com IA em Docker (Ralph Loops), criando PRDs e desenvolvendo features de forma agêntica.',
+          'Utilizei Codex CLI para revisão de atividades desenvolvidas com IA e code review contínuo, mantendo padrão de qualidade e consistência arquitetural.',
           'Orientei time de 6 devs juniores como Tech Lead e DevOps, coordenando sprints via Jira/Scrum.',
         ],
       },
@@ -82,8 +87,9 @@ export const pt: Translations = {
         subProjects: [
           {
             bullets: [
-              'Recuperei US$ 70k anuais em receita ao mitigar erros contratuais via refatoração de cron jobs Node.js e integrações Axios/Express, reduzindo falhas em 60%.',
+              'Recuperei US$ 70k anuais em receita ao mitigar erros contratuais via refatoração de cron jobs Node.js e integrações Axios/Express, reduzindo falhas em 60% e elevando a confiabilidade das tarefas em 45%.',
               'Reduzi MTTR em 50% e garanti deploys zero downtime com GitHub Actions, Docker e Kubernetes.',
+              'Desenvolvi middlewares Node.js auth/log para padronizar a arquitetura de microsserviços, integrando 3 novos serviços no primeiro mês.',
             ],
           },
           {
@@ -91,6 +97,7 @@ export const pt: Translations = {
               'Reduzi custos de infraestrutura AWS em 81% (US$ 3.4k/mês) via otimização de índices MongoDB e automação de limpeza de dados, permitindo downsizing de instâncias M80 → M40.',
               'Reduzi latência em 50% com caching Redis e otimização de queries MongoDB.',
               'Construí sistema de tickets em tempo real em React com Webhooks, reduzindo latência de atualização em 35%.',
+              'Documentei APIs via OpenAPI/Swagger, otimizando a integração e reduzindo erros pela metade.',
             ],
           },
         ],
@@ -159,7 +166,7 @@ export const pt: Translations = {
   },
   hint: {
     l1: '// wanna see in English? 👀',
-    l2: '"EN"', 
+    l2: '"EN"',
     l3: '// TOGGLE IT IN MENUUU  ↑',
     l4: '// the resume also change 😉',
   },
