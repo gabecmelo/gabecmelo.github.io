@@ -5,7 +5,7 @@ export const projects: ProjectStructure[] = [
     name: 'Conecta Paraná',
     tags: ['NestJS', 'Angular', 'Flutter', 'Docker', 'GitHub Actions', 'DDD', 'Oracle Cloud'],
     github: 'https://github.com/c-s-softwares/conecta-parana',
-    live: 'https://admin.conectaparana.com.br/login',
+    live: 'https://conectaparana.com.br/',
     status: 'live',
   },
   {
