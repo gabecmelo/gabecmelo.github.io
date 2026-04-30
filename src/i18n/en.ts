@@ -125,11 +125,11 @@ export const en: Translations = {
       },
       {
         description:
-          'Mobile app for civil construction budgets with 50+ real-time calculators (< 500ms) and 96% test coverage via Mutation Testing with Stryker.',
+          'A simulated betting platform built with Vue.js, featuring a responsive interface and modern UX designed for technical demonstration and testing purposes.',
       },
       {
         description:
-          'Sports betting platform built with Vue.js, featuring a responsive interface and modern user experience.',
+          'Mobile app for civil construction budgets with 50+ real-time calculators (< 500ms) and 96% test coverage via Mutation Testing with Stryker.',
       },
       {
         description:

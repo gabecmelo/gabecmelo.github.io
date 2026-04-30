@@ -7,11 +7,10 @@ export const projects: ProjectStructure[] = [
     github: 'https://github.com/c-s-softwares/conecta-parana',
     live: 'https://conectaparana.com.br/',
     status: 'live',
-  },
-  {
-    name: 'Orçamento Fácil',
-    tags: ['React', 'Capacitor', 'TypeScript', 'Stryker', 'Android'],
-    status: 'wip',
+    screenshots: {
+      type: 'desktop',
+      images: ['/projects/conecta-parana.png'],
+    },
   },
   {
     name: 'Gabebet',
@@ -19,6 +18,15 @@ export const projects: ProjectStructure[] = [
     github: 'https://github.com/gabecmelo/gabebet',
     live: 'https://gabecmelo.github.io/gabebet/',
     status: 'live',
+    screenshots: {
+      type: 'desktop',
+      images: ['/projects/gabebet.png'],
+    },
+  },
+  {
+    name: 'Orçamento Fácil',
+    tags: ['React', 'Capacitor', 'TypeScript', 'Stryker', 'Android'],
+    status: 'wip',
   },
   {
     name: 'RPGERAL',

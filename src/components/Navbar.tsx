@@ -15,8 +15,8 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '#about', label: t.nav.about },
-    { href: '#experience', label: t.nav.experience },
     { href: '#projects', label: t.nav.projects },
+    { href: '#experience', label: t.nav.experience },
     { href: '#skills', label: t.nav.skills },
     { href: '#education', label: t.nav.education },
     { href: '#contact', label: t.nav.contact },
@@ -63,9 +63,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-bg/90 backdrop-blur border-b border-border' : 'bg-transparent border-bg'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-bg/90 backdrop-blur border-b border-border' : 'bg-transparent border-bg'
+        }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <button
@@ -82,9 +81,8 @@ export default function Navbar() {
             <li key={link.href}>
               <button
                 onClick={() => handleNavClick(link.href)}
-                className={`font-mono text-sm transition-colors hover:text-accent ${
-                  activeSection === link.href.slice(1) ? 'text-accent' : 'text-muted'
-                }`}
+                className={`font-mono text-sm transition-colors hover:text-accent ${activeSection === link.href.slice(1) ? 'text-accent' : 'text-muted'
+                  }`}
               >
                 <span className="text-accent/60">#</span>
                 {link.label}
@@ -131,9 +129,8 @@ export default function Navbar() {
               <li key={link.href}>
                 <button
                   onClick={() => handleNavClick(link.href)}
-                  className={`font-mono text-sm transition-colors hover:text-accent ${
-                    activeSection === link.href.slice(1) ? 'text-accent' : 'text-muted'
-                  }`}
+                  className={`font-mono text-sm transition-colors hover:text-accent ${activeSection === link.href.slice(1) ? 'text-accent' : 'text-muted'
+                    }`}
                 >
                   <span className="text-accent/60">#</span>
                   {link.label}
@@ -145,7 +142,6 @@ export default function Navbar() {
                 onClick={toggle}
                 className="font-mono text-sm flex items-center gap-1 border border-border rounded px-2 py-0.5 hover:border-accent/50 transition-colors"
               >
-                {/* TODO: hint em mobile mostrando onde alterna após o usuário abrir pela primeira vez */}
                 <span className={lang === 'pt' ? 'text-accent' : 'text-muted'}>PT</span>
                 <span className="text-border">|</span>
                 <span className={lang === 'en' ? 'text-accent' : 'text-muted'}>EN</span>

@@ -6,12 +6,18 @@ export interface ExperienceStructure {
   subProjects?: Array<{ name: string }>
 }
 
+export interface ProjectScreenshots {
+  type: 'desktop' | 'mobile'
+  images: string[]
+}
+
 export interface ProjectStructure {
   name: string
   tags: string[]
   github?: string
   live?: string
   status: 'live' | 'wip' | 'dev'
+  screenshots?: ProjectScreenshots
 }
 
 export interface EducationStructure {

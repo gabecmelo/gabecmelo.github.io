@@ -125,11 +125,11 @@ export const pt: Translations = {
       },
       {
         description:
-          'App mobile para orçamentos de construção civil com 50+ calculadoras em tempo real (< 500ms) e cobertura de testes de 96% via Mutation Testing com Stryker.',
+          'Plataforma de apostas simulada, construída com Vue.js, com interface responsiva e UX moderna, projetada para fins de demonstração técnica e testes.',
       },
       {
         description:
-          'Plataforma de apostas esportivas desenvolvida em Vue.js, com interface responsiva e experiência de usuário moderna.',
+          'App mobile para orçamentos de construção civil com 50+ calculadoras em tempo real (< 500ms) e cobertura de testes de 96% via Mutation Testing com Stryker.',
       },
       {
         description:
