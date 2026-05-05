@@ -1,7 +1,8 @@
 export interface ExperienceStructure {
   company: string
-  period: string
-  location: string
+  periodStart: string
+  periodEnd: string | 'present'
+  location: 'remote'
   tags: string[]
   subProjects?: Array<{ name: string }>
 }

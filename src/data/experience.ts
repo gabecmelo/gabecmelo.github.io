@@ -3,26 +3,30 @@ import type { ExperienceStructure } from '../types'
 export const experience: ExperienceStructure[] = [
   {
     company: 'Grupo UND',
-    period: '02/2026 - Presente',
-    location: 'Remoto',
+    periodStart: '02/2026',
+    periodEnd: 'present',
+    location: 'remote',
     tags: ['Vue.js', 'Nuxt 4', 'Playwright', 'Vitest', 'Laravel', 'Stryker'],
   },
   {
     company: 'C&S Softwares',
-    period: '10/2025 - Presente',
-    location: 'Remoto',
+    periodStart: '10/2025',
+    periodEnd: 'present',
+    location: 'remote',
     tags: ['NestJS', 'Angular', 'Flutter', 'Docker', 'GitHub Actions', 'RxJS', 'DDD'],
   },
   {
     company: 'SoftKoe Games',
-    period: '07/2025 - Presente',
-    location: 'Remoto',
+    periodStart: '07/2025',
+    periodEnd: 'present',
+    location: 'remote',
     tags: ['Angular', 'Lua', 'Rojo', 'Roblox', 'Game Dev', 'TypeScript'],
   },
   {
     company: 'Good Software Dev',
-    period: '12/2024 - 07/2025',
-    location: 'Remoto',
+    periodStart: '12/2024',
+    periodEnd: '07/2025',
+    location: 'remote',
     tags: ['Node.js', 'React', 'MongoDB', 'Redis', 'Docker', 'Kubernetes', 'AWS'],
     subProjects: [
       { name: 'Cover Badger' },
@@ -31,8 +35,9 @@ export const experience: ExperienceStructure[] = [
   },
   {
     company: 'Trybe',
-    period: '01/2024 - 05/2024',
-    location: 'Remoto',
+    periodStart: '01/2024',
+    periodEnd: '05/2024',
+    location: 'remote',
     tags: ['JavaScript', 'TypeScript', 'React'],
   },
 ]

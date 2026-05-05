@@ -29,6 +29,7 @@ export interface Translations {
   experience: {
     heading: string
     remote: string
+    present: string
     items: ExperienceTranslation[]
   }
   projects: {

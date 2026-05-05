@@ -35,6 +35,7 @@ export const pt: Translations = {
   experience: {
     heading: 'experiência',
     remote: 'Remoto',
+    present: 'Presente',
     items: [
       {
         role: 'Quality Engineer Lead',

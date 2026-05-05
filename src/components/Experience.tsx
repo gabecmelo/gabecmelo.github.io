@@ -41,11 +41,11 @@ export default function Experience() {
                     <div className="flex flex-col sm:items-end gap-1 shrink-0">
                       <span className="flex items-center gap-1.5 font-mono text-xs text-muted">
                         <Calendar size={12} />
-                        {item.period}
+                        {item.periodStart} – {item.periodEnd === 'present' ? t.experience.present : item.periodEnd}
                       </span>
                       <span className="flex items-center gap-1.5 font-mono text-xs text-muted">
                         <MapPin size={12} />
-                        {item.location}
+                        {t.experience.remote}
                       </span>
                     </div>
                   </div>
