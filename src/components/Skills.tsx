@@ -8,7 +8,7 @@ import {
   SiPostgresql, SiMongodb, SiFirebase, SiPrisma,
   SiVitest,
   SiDocker, SiKubernetes, SiGithubactions, SiNginx, SiLinux,
-  SiLua,
+  SiGooglecloud,
 } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa'
 import { VscCode, VscBeaker, VscTerminalPowershell } from 'react-icons/vsc'
@@ -69,14 +69,16 @@ const skillsByGroup: SkillItem[][] = [
     { name: 'Nginx', Icon: SiNginx, color: '#009639' },
     { name: 'Linux', Icon: SiLinux, color: '#FCC624' },
     { name: 'Oracle Cloud', color: '#F80000' },
+    { name: 'GCP', Icon: SiGooglecloud, color: '#4285F4' },
   ],
-  // AI & Game Dev
+  // AI-Assisted Dev
   [
     { name: 'Claude Code', Icon: VscCode, color: '#a855f7' },
     { name: 'Codex CLI', Icon: VscCode, color: '#8b949e' },
-    { name: 'Claude Design', Icon: VscCode, color: '#c084fc' },
     { name: 'RAG Pipelines', color: '#8b949e' },
-    { name: 'Lua / Roblox', Icon: SiLua, color: '#00007C' },
+    { name: 'LangChain', color: '#1C3C3C' },
+    { name: 'Agentic Programming', color: '#8b949e' },
+    { name: 'LLMs', color: '#8b949e' },
   ],
 ]
 

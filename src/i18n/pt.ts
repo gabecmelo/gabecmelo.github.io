@@ -36,48 +36,41 @@ export const pt: Translations = {
     heading: 'experiência',
     remote: 'Remoto',
     present: 'Presente',
+    // SoftKoe Games — side project (reservado para futura seção)
+    // {
+    //   role: 'Fundador e Desenvolvedor de Jogos Líder',
+    //   description: 'Fundador e desenvolvedor líder em estúdio de jogos web e Roblox, liderando roadmap técnico e desenvolvimento de gameplay.',
+    //   bullets: [
+    //     'Liderei roadmaps técnicos e mentoria via pair programming, aumentando produtividade do time em 50%.',
+    //     'Refatorei integrações de APIs desenvolvidas pelo time, elevando performance e eficiência em 70%.',
+    //     'Otimizei arquitetura de componentes Angular, reduzindo tempo de carregamento de 3s para 1s.',
+    //     'Desenvolvi lógicas internas complexas em Lua com Rojo e VS Code, garantindo 100% de estabilidade sistêmica.',
+    //     'Projetei Design System modular para interfaces e ambientes, acelerando criação de assets em 40%.',
+    //     'Otimizei ambientes 3D e scripts, resultando em 30% de ganho de FPS em dispositivos mobile.',
+    //   ],
+    // },
     items: [
       {
-        role: 'Quality Engineer Lead',
+        role: 'Engenheiro de Software Full Stack Pleno com Foco em Qualidade',
         description:
-          'Liderança de qualidade em plataforma financeira com Nuxt 4 e Laravel 12.',
+          'Participo do desenvolvimento e na garantia de qualidade dos sistemas do Grupo UND, com foco em arquitetura de testes automatizados e auditorias de performance nos stacks Nuxt 4 (Vue.js) e Laravel 12.',
         bullets: [
           'Realizei auditorias de performance em Nuxt 4 (Vue.js) e Laravel 12, identificando e corrigindo gargalos críticos relacionados à complexidade algorítmica (Big O) e memory leaks em event listeners globais.',
-          'Arquitetei e implantei infraestrutura de testes com Playwright (E2E) e Vitest (unitário) + Mutation Testing, atingindo cobertura acima de 80%.',
-          'Acelerei a baseline de automação em ~60% utilizando LLMs e programação agêntica para design e execução de casos de teste complexos.',
-          'Produzi 30+ páginas de documentação técnica de QA cobrindo regras financeiras, regulatórias e suítes Gherkin priorizadas por risco.',
-          'Conduzi code reviews e testes de API via IA, aumentando satisfação de clientes internos em 30% e reduzindo atrasos em 40%.',
-          'Executei testes manuais e testes de API em funcionalidades novas, validando fluxos críticos de pagamentos, containment e integrações com provedores externos antes de releases.',
+          'Estruturei e implantei infraestrutura de testes automatizados com Playwright (E2E) e Vitest (Unitário), integrando Mutation Testing para atingir cobertura de código efetiva acima de 80%.',
+          'Acelerei a baseline de automação em aproximadamente 60% utilizando LLMs e programação agêntica para design e execução de casos de teste complexos.',
+          'Conduzi code reviews de funcionalidades críticas e testes de API via IA (PRDs para validação de endpoints), combinando testes manuais, automatizados e assistidos por IA, aumentando a satisfação de clientes internos em 30% e reduzindo atrasos em entregas em 40%.',
         ],
       },
       {
-        role: 'Fundador e Engenheiro de Software Full Stack Principal',
+        role: 'Engenheiro de Software Full Stack Pleno',
         description:
-          'Fundador e Tech Lead de projetos monorepo com arquitetura DDD, CI/CD completo e times de 6+ desenvolvedores.',
+          'Responsável pelo desenvolvimento full stack de dois produtos principais: o Conecta Paraná (guia urbano em monorepo com NestJS, Angular SPA e Flutter) e o Orçamento Fácil (aplicativo mobile para construção civil em React e Capacitor).',
         bullets: [
-          'Conduzi a arquitetura do Conecta Paraná com DDD, separando contextos entre mobile (Flutter) e web admin (Angular).',
-          'Arquitetei monorepo NestJS + Angular + Flutter com 4 ambientes Docker e CI/CD via GitHub Actions com deploy automático ARM64 em VPS Oracle, reduzindo setup de novos devs de dias para minutos.',
-          'Desenvolvi componentes Angular com RxJS para gerenciamento reativo de estado e streams assíncronos, aplicando boas práticas de performance e acessibilidade (WCAG).',
-          'Estruturei pipelines CI/CD completas com GitHub Actions (lint, testes unitários, e2e, build multi-arch com QEMU, deploy via SSH ao GHCR), com branch protection impedindo merge sem validação.',
-          'Utilizei Claude Code para acelerar entregas que levariam 2-3 semanas para menos de 2 dias de desenvolvimento.',
-          'Elevei cobertura de testes do Orçamento Fácil de 60% para 96% com Stryker (Mutation Testing).',
-          'Prototipei interfaces do Orçamento Fácil com Claude Design, acelerando o ciclo de validação visual e reduzindo retrabalho de UI em 70%.',
-          'Implementei pipelines RAG com IA em Docker (Ralph Loops), criando PRDs e desenvolvendo features de forma agêntica.',
-          'Utilizei Codex CLI para revisão de atividades desenvolvidas com IA e code review contínuo, mantendo padrão de qualidade e consistência arquitetural.',
-          'Orientei time de 6 devs juniores como Tech Lead e DevOps, coordenando sprints via Jira/Scrum.',
-        ],
-      },
-      {
-        role: 'Fundador e Desenvolvedor de Jogos Líder',
-        description:
-          'Fundador e desenvolvedor líder em estúdio de jogos web e Roblox, liderando roadmap técnico e desenvolvimento de gameplay.',
-        bullets: [
-          'Liderei roadmaps técnicos e mentoria via pair programming, aumentando produtividade do time em 50%.',
-          'Refatorei integrações de APIs desenvolvidas pelo time, elevando performance e eficiência em 70%.',
-          'Otimizei arquitetura de componentes Angular, reduzindo tempo de carregamento de 3s para 1s.',
-          'Desenvolvi lógicas internas complexas em Lua com Rojo e VS Code, garantindo 100% de estabilidade sistêmica.',
-          'Projetei Design System modular para interfaces e ambientes, acelerando criação de assets em 40%.',
-          'Otimizei ambientes 3D e scripts, resultando em 30% de ganho de FPS em dispositivos mobile.',
+          'Estruturei infraestrutura completa de monorepo (NestJS + Angular SPA + Flutter) com 4 ambientes Docker, CI/CD via GitHub Actions e deploy automático ARM64 em VPS Oracle, reduzindo setup de novos devs de dias para minutos.',
+          'Desenvolvi componentes Angular com RxJS para gerenciamento reativo de estado e streams de dados assíncronos, aplicando boas práticas de performance e acessibilidade (WCAG).',
+          'Utilizei Claude Code + Codex CLI para entregas contínuas, acelerando funcionalidades que levariam 2–3 semanas para menos de 2 dias de desenvolvimento, e auxiliando na configuração de CI/CD.',
+          'Elevei a cobertura de testes do projeto Orçamento Fácil (app mobile) de 60% para 96% com Stryker (Mutation Testing), garantindo cobertura de mutantes em fluxos críticos de negócio.',
+          'Integrei o Firebase ao aplicativo mobile Orçamento Fácil, desenvolvendo um sistema de auto-save automático com debounce para formulários complexos, elevando a confiabilidade da aplicação e reduzindo chamadas desnecessárias ao banco de dados.',
         ],
       },
       {
@@ -88,7 +81,7 @@ export const pt: Translations = {
         subProjects: [
           {
             bullets: [
-              'Recuperei US$ 5.8k mensais em receita ao mitigar erros contratuais via refatoração de cron jobs Node.js e integrações Axios/Express, reduzindo falhas em 60% e elevando a confiabilidade das tarefas em 45%.',
+              'Recuperei US$ 70k anuais em receita ao mitigar erros contratuais via refatoração de cron jobs Node.js e integrações Axios/Express, reduzindo falhas em 60% e elevando a confiabilidade das tarefas em 45%.',
               'Reduzi MTTR em 50% e garanti deploys zero downtime com GitHub Actions, Docker e Kubernetes.',
               'Desenvolvi middlewares Node.js auth/log para padronizar a arquitetura de microsserviços, integrando 3 novos serviços no primeiro mês.',
             ],
@@ -106,8 +99,9 @@ export const pt: Translations = {
       {
         role: 'Instrutor de Desenvolvimento Front End',
         description:
-          'Mentoria e instrução de desenvolvedores em JavaScript, TypeScript e React.',
+          'Como Instrutor Front End, mentorei turmas de desenvolvedores aspirantes em JavaScript, TypeScript e React, com foco em qualidade de código, boas práticas e aceleração do caminho para prontidão profissional.',
         bullets: [
+          'Documentei aulas e estruturei roteiros para mentorias e workshops, apoiando o time de mentores na condução de conteúdos específicos e na resolução de dúvidas recorrentes da turma.',
           'Mentorei desenvolvedores em JavaScript, TypeScript e React, acelerando a proficiência técnica em 40%.',
           'Conduzi code reviews e workshops, elevando a qualidade de código de mais de 50 desenvolvedores.',
           'Otimizei materiais e suporte via Slack, reduzindo tempo de resolução de tickets de 40 para 20 minutos.',
@@ -146,7 +140,7 @@ export const pt: Translations = {
       { label: 'Bancos de Dados' },
       { label: 'Testes' },
       { label: 'Cloud & DevOps' },
-      { label: 'AI & Game Dev' },
+      { label: 'AI-Assisted Dev' },
     ],
   },
   education: {
