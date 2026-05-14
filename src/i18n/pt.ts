@@ -20,10 +20,10 @@ export const pt: Translations = {
   about: {
     heading: 'sobre-mim',
     bio: [
-      'Olá! Sou <strong>Gabriel Cabral Melo</strong>, Engenheiro de Software Full Stack com mais de 3 anos de experiência construindo aplicações escaláveis — do backend ao frontend, passando por infraestrutura e liderança técnica.',
-      'Tenho experiência sólida com <accent>React, Angular, Vue, Node.js, NestJS e TypeScript</accent>, além de RxJS, arquitetura de microsserviços, otimização de performance, acessibilidade (WCAG) e integração de APIs REST. Atualmente também atuo com <accent>AI-Assisted Development</accent> usando Claude Code, Codex CLI e RAG Pipelines para acelerar entregas sem abrir mão de qualidade.',
-      'Como Tech Lead em projetos como <strong>Conecta Paraná</strong> e fundador da <strong>C&S Softwares</strong> , combino visão de produto com execução técnica — definindo arquitetura, conduzindo sprints e mentorando times.',
-      'Sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar e falo Português (nativo), Inglês e Espanhol.',
+      'Olá! Sou <strong>Gabriel Cabral Melo</strong>, Engenheiro de Software Full Stack com mais de 3 anos de experiência construindo aplicações escaláveis — do frontend ao backend, passando por infraestrutura, testes automatizados e ambientes cloud.',
+      'Especializado em <accent>React, Angular e Node.js</accent>, tenho experiência sólida com TypeScript, RxJS, arquitetura monolítica e microsserviços. Histórico comprovado em otimização de performance, acessibilidade (WCAG), testes automatizados com Playwright, Vitest e Testing Library, e entrega contínua com metodologias ágeis (Scrum/Jira).',
+      'No backend e infraestrutura, construo APIs de produção, serviços de automação e integrações robustas com TypeScript e Node.js — incluindo redução de 81% em custos AWS e 50% na latência de sistemas. Atuo ativamente com <accent>AI-Assisted Development</accent>: agentes de IA, LLMs (Claude, OpenAI), pipelines RAG, LangChain e programação agêntica, entregando produtos nativos de IA em produção, não apenas protótipos.',
+      'Sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar e falo Português (nativo), Inglês (fluente) e Espanhol.',
     ],
     stats: [
       { value: '3+', label: 'anos de experiência' },

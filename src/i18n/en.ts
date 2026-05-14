@@ -13,17 +13,17 @@ export const en: Translations = {
     greeting: "Hello, world! I'm",
     role: 'Full Stack Software Engineer',
     description:
-      '3+ years building scalable applications with React, Angular, Vue, and Node.js/NestJS. Full stack architecture, automated testing, CI/CD, and AI-Assisted Development.',
+      '3+ years building scalable applications with React, Angular, Vue, and Node.js (Express and NestJS). Full stack architecture, automated testing, CI/CD, and AI-Assisted Development.',
     cta: { contact: 'Contact', resume: 'Resume' },
     resume: '/Gabriel_Cabral_Melo_EN.pdf',
   },
   about: {
     heading: 'about-me',
     bio: [
-      "Hi! I'm <strong>Gabriel Cabral Melo</strong>, a Full Stack Software Engineer with over 3 years of experience building scalable applications — from backend to frontend, including infrastructure and technical leadership.",
-      'I have solid experience with <accent>React, Angular, Vue, Node.js, NestJS, and TypeScript</accent>, along with RxJS, microservices architecture, performance optimization, accessibility (WCAG), and REST API integration. I also work with <accent>AI-Assisted Development</accent> using Claude Code, Codex CLI, and RAG Pipelines to accelerate delivery without compromising quality.',
-      'As Tech Lead at <strong>Conecta Paraná</strong> and founder of <strong>C&S Softwares</strong>, I combine product vision with technical execution — defining architecture, running sprints, and mentoring teams.',
-      'I am pursuing a degree in <strong>Systems Analysis and Development</strong> at UniCesumar and speak Portuguese (native), English, and Spanish.',
+      "Hi! I'm <strong>Gabriel Cabral Melo</strong>, a Full Stack Software Engineer with over 3 years of experience building scalable applications — from frontend to backend, through infrastructure, automated testing, and cloud environments.",
+      'Specialized in <accent>React, Angular and Node.js</accent>, with solid experience in TypeScript, RxJS, monolithic and microservices architectures. Proven track record in performance optimization, accessibility (WCAG), automated testing with Playwright, Vitest, and Testing Library, and continuous delivery with agile methodologies (Scrum/Jira).',
+      'On the backend and infrastructure side, I build production APIs, automation services, and robust integrations with TypeScript and Node.js — including 81% AWS cost reduction and 50% system latency reduction. I actively work with <accent>AI-Assisted Development</accent>: AI agents, LLMs (Claude, OpenAI API), RAG pipelines, LangChain, and agentic programming — shipping real AI-native products to production, not just prototypes.',
+      'I am pursuing a degree in <strong>Systems Analysis and Development</strong> at UniCesumar and speak Portuguese (native), English (fluent), and Spanish.',
     ],
     stats: [
       { value: '3+', label: 'years of experience' },
