@@ -13,17 +13,17 @@ export const en: Translations = {
     greeting: "Hello, world! I'm",
     role: 'Full Stack Software Engineer',
     description:
-      '3+ years building scalable applications with React, Angular, Vue, and Node.js (Express and NestJS). Full stack architecture, automated testing, CI/CD, and AI-Assisted Development.',
+      '3 years building scalable applications with React and Node.js. Experience with AWS cloud infrastructure optimization, automated testing, accessibility, and CI/CD with automated deployment to Oracle Cloud.',
     cta: { contact: 'Contact', resume: 'Resume' },
-    resume: '/Gabriel_Cabral_Melo_EN.pdf',
+    resume: '/Gabriel_Cabral_Melo_Full_Stack_Software_Engineer.pdf',
   },
   about: {
     heading: 'about-me',
     bio: [
-      "Hi! I'm <strong>Gabriel Cabral Melo</strong>, a Full Stack Software Engineer with over 3 years of experience building scalable applications — from frontend to backend, through infrastructure, automated testing, and cloud environments.",
-      'Specialized in <accent>React, Angular and Node.js</accent>, with solid experience in TypeScript, RxJS, monolithic and microservices architectures. Proven track record in performance optimization, accessibility (WCAG), automated testing with Playwright, Vitest, and Testing Library, and continuous delivery with agile methodologies (Scrum/Jira).',
-      'On the backend and infrastructure side, I build production APIs, automation services, and robust integrations with TypeScript and Node.js — including 81% AWS cost reduction and 50% system latency reduction. I actively work with <accent>AI-Assisted Development</accent>: AI agents, LLMs (Claude, OpenAI API), RAG pipelines, LangChain, and agentic programming — shipping real AI-native products to production, not just prototypes.',
-      'I am pursuing a degree in <strong>Systems Analysis and Development</strong> at UniCesumar and speak Portuguese (native), English (fluent), and Spanish.',
+      "Hi! I'm <strong>Gabriel Cabral Melo</strong>, a Full Stack Software Engineer with 3 years of experience developing modern, scalable applications with JavaScript and TypeScript — from frontend to backend, through infrastructure, automated testing, and cloud environments.",
+      'I build robust interfaces in <accent>React</accent> and efficient backend ecosystems in <accent>Node.js and NestJS</accent>, with solid experience in TypeScript and microservices architectures. I specialize in ensuring software quality through automated testing (Playwright, Vitest) and accessibility (WCAG), delivering under agile methodologies.',
+      'I have a proven track record in cloud infrastructure optimization — an 81% reduction in AWS costs and 50% in system latency — with strong experience in <accent>CI/CD and deployment pipelines</accent>, including automated deployment to cloud environments such as Oracle Cloud. I am an active user of <accent>AI-Assisted Development</accent> tools to accelerate deliveries.',
+      'I am pursuing a degree in <strong>Systems Analysis and Development</strong> at UniCesumar and speak Portuguese (native), English (professional), and Spanish (conversational).',
     ],
     stats: [
       { value: '3+', label: 'years of experience' },
@@ -51,60 +51,49 @@ export const en: Translations = {
     // },
     items: [
       {
-        role: 'Full Stack Software Engineer',
+        role: 'Principal Full Stack Software Engineer',
         description:
-          "Part of the development and quality assurance team for Grupo UND's systems, focusing on automated test architecture and performance audits across Nuxt 4 (Vue.js) and Laravel 12 stacks.",
+          'Responsible for the full stack development of two main products — Conecta Paraná (NestJS, Angular, and Flutter) and Orçamento Fácil (Firebase and React) — leading architectural decisions, cloud infrastructure, and code governance.',
         bullets: [
-          'Performed performance audits on Nuxt 4 (Vue.js) and Laravel 12, identifying and fixing critical bottlenecks related to algorithmic complexity (Big O) and memory leaks in global event listeners.',
-          'Structured and deployed automated testing infrastructure with Playwright (E2E) and Vitest (Unit), integrating Mutation Testing to achieve effective code coverage above 80%.',
-          'Accelerated the automation baseline by approximately 60% using LLMs and agentic programming for the design and execution of complex test cases.',
-          'Conducted code reviews of critical features and AI-assisted API testing (PRDs for endpoint validation), combining manual, automated, and AI-assisted tests, increasing internal client satisfaction by 30% and reducing delivery delays by 40%.',
+          'Led code review routines focused on performance and best practices, reducing the incidence of production bugs by more than 60% and ensuring codebase consistency.',
+          'Designed standardized API contracts and implemented global frontend interceptors for error handling, reducing production debugging time and improving the user experience.',
+          'Developed custom Guards and reusable decorators in NestJS for authentication and authorization, eliminating duplicated code and accelerating the creation of new secure routes.',
+          'Structured the Docker environment and CI/CD pipelines (GitHub Actions) with automated deployment to Oracle Cloud, reducing new developer setup time from days to minutes.',
+          "Raised the mobile app's test coverage from 60% to 96% using mutation testing (Stryker), shielding critical business flows.",
+          'Integrated AI tools (Claude Code) into the workflow, optimizing the delivery cycle of complex features from weeks to under 2 days.',
         ],
       },
       {
-        role: 'Full Stack Software Engineer',
+        role: 'Software Development Engineer in Test (SDET) / Software Engineer',
         description:
-          'Responsible for full stack development of two main products: Conecta Paraná (urban guide in a NestJS monorepo with Angular SPA and Flutter) and Orçamento Fácil (mobile app for civil construction in React and Capacitor).',
+          'Strategic role in quality assurance, performance auditing, and automated test architecture for robust systems based on Nuxt 4 (Vue.js) and Laravel 12.',
         bullets: [
-          'Structured complete monorepo infrastructure (NestJS + Angular SPA + Flutter) with 4 Docker environments, CI/CD via GitHub Actions, and automated ARM64 deployment on Oracle VPS, reducing new developer setup from days to minutes.',
-          'Developed Angular components with RxJS for reactive state management and async data streams, applying best practices for performance and accessibility (WCAG).',
-          'Used Claude Code + Codex CLI for continuous deliveries, accelerating features that would take 2–3 weeks to under 2 days of development, and assisting in CI/CD configuration.',
-          'Elevated test coverage of the Orçamento Fácil project (mobile app) from 60% to 96% with Stryker (Mutation Testing), ensuring mutant coverage in critical business flows.',
-          'Integrated Firebase into the Orçamento Fácil mobile app, developing an auto-save system with debounce for complex forms, increasing application reliability and reducing unnecessary database calls.',
+          'Performed audits and implemented load testing using K6 across the project ecosystems, identifying and fixing algorithmic complexity bottlenecks (Big O) and memory leaks under high concurrency.',
+          'Structured and deployed the automated testing infrastructure using Playwright (E2E) and Vitest (Unit) with TypeScript, integrating mutation testing to ensure effective coverage above 80%.',
+          "Developed and accelerated the team's automation baseline using LLMs and agentic programming for the design and autonomous execution of complex test scenarios.",
+          'Conducted code reviews of critical features and validation of API contracts, combining AI-assisted testing to reduce delivery delays and mitigate bugs.',
         ],
       },
       {
-        role: 'Full Stack Software Engineer',
+        role: 'Backend Software Engineer',
         description:
-          'Consultant on large-scale projects for international clients, focusing on microservices, cost reduction, and system reliability.',
-        bullets: [],
-        subProjects: [
-          {
-            bullets: [
-              'Recovered US$ 70k annually in revenue by mitigating contractual errors through refactoring Node.js cron jobs and Axios/Express integrations, reducing failures by 60% and increasing task reliability by 45%.',
-              'Reduced MTTR by 50% and ensured zero-downtime deployments with GitHub Actions, Docker, and Kubernetes.',
-              'Developed Node.js auth/log middleware to standardize the microservices architecture, onboarding 3 new services within the first month.',
-            ],
-          },
-          {
-            bullets: [
-              'Reduced AWS infrastructure costs by 81% (US$ 3.4k/month) through MongoDB index optimization and data cleanup pipeline automation, enabling instance downsizing from M80 to M40.',
-              'Reduced latency by 50% through Redis caching layers and complex MongoDB query optimization.',
-              'Built a real-time ticketing system in React using Webhooks, reducing data update latency by 35%.',
-              'Documented APIs via OpenAPI/Swagger, optimizing integration and cutting errors in half.',
-            ],
-          },
+          'Backend engineering role focused on legacy system refactoring, infrastructure cost optimization, and microservices architecture design for multiple clients.',
+        bullets: [
+          'Reduced AWS infrastructure costs by 81% (US$ 3.4k/month) and latency by 50% through MongoDB index optimization and cleanup pipeline automation, enabling a safe downgrade from an M80 to an M40 instance.',
+          'Recovered US$ 70k in annual revenue by refactoring critical automations and API integrations in Node.js (Axios/Express), eliminating communication failures and contractual errors in data processing.',
+          'Designed and implemented the backend architecture for a real-time ticketing system based on Webhooks and messaging, reducing event processing latency by 35%.',
+          'Reduced MTTR by 50% and ensured reliable deployments through container orchestration with Docker and Kubernetes, integrated into CI/CD pipelines via GitHub Actions.',
         ],
       },
       {
-        role: 'Front End Developer Instructor',
+        role: 'Front End Development Instructor',
         description:
-          'As a Front End Instructor, mentored cohorts of aspiring developers in JavaScript, TypeScript, and React, focusing on code quality, best practices, and accelerating the path to professional readiness.',
+          'Mentoring and professional acceleration role for developers, focused on code quality, frontend architecture, and job market readiness.',
         bullets: [
-          'Documented classes and structured scripts for mentorships and workshops, supporting the mentors team in conducting specific content and resolving recurring class questions.',
-          'Mentored developers in JavaScript, TypeScript, and React, accelerating technical proficiency by 40%.',
-          'Conducted code reviews and workshops, elevating code quality for over 50 developers.',
-          'Optimized course materials and Slack support, reducing ticket resolution time from 40 to 20 minutes.',
+          "Mentored more than 50 developers in the React, TypeScript, and JavaScript ecosystem, accelerating the group's technical proficiency by more than 30% through targeted study plans.",
+          "Conducted hands-on workshops and code review routines, raising students' code quality standards in line with industry best practices.",
+          'Structured technical scripts and documentation for mentoring sessions, standardizing support material and serving as a reference for the instructor team.',
+          'Optimized the support flow via Slack, reducing the average resolution time for technical questions from 40 to 20 minutes.',
         ],
       },
     ],

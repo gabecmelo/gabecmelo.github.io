@@ -13,17 +13,17 @@ export const pt: Translations = {
     greeting: 'Olá, mundo! Eu sou',
     role: 'Engenheiro de Software Full Stack',
     description:
-      '3+ anos construindo aplicações escaláveis com React, Angular, Vue e Node.js/NestJS. Arquitetura full stack, testes automatizados, CI/CD e AI-Assisted Development.',
+      '3 anos construindo aplicações escaláveis com React e Node.js. Experiência com otimização de infraestrutura cloud AWS, testes automatizados, acessibilidade, e CI/CD com deploy automatizado na Oracle Cloud.',
     cta: { contact: 'Contato', resume: 'Currículo' },
-    resume: '/Gabriel_Cabral_Melo_PT.pdf',
+    resume: '/Gabriel_Cabral_Melo_Engenheiro_De_Software_Full_Stack.pdf',
   },
   about: {
     heading: 'sobre-mim',
     bio: [
-      'Olá! Sou <strong>Gabriel Cabral Melo</strong>, Engenheiro de Software Full Stack com mais de 3 anos de experiência construindo aplicações escaláveis — do frontend ao backend, passando por infraestrutura, testes automatizados e ambientes cloud.',
-      'Especializado em <accent>React, Angular e Node.js</accent>, tenho experiência sólida com TypeScript, RxJS, arquitetura monolítica e microsserviços. Histórico comprovado em otimização de performance, acessibilidade (WCAG), testes automatizados com Playwright, Vitest e Testing Library, e entrega contínua com metodologias ágeis (Scrum/Jira).',
-      'No backend e infraestrutura, construo APIs de produção, serviços de automação e integrações robustas com TypeScript e Node.js — incluindo redução de 81% em custos AWS e 50% na latência de sistemas. Atuo ativamente com <accent>AI-Assisted Development</accent>: agentes de IA, LLMs (Claude, OpenAI), pipelines RAG, LangChain e programação agêntica, entregando produtos nativos de IA em produção, não apenas protótipos.',
-      'Sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar e falo Português (nativo), Inglês (fluente) e Espanhol.',
+      'Olá! Sou <strong>Gabriel Cabral Melo</strong>, Engenheiro de Software Full Stack com 3 anos de experiência desenvolvendo aplicações modernas e escaláveis com JavaScript e TypeScript — do frontend ao backend, passando por infraestrutura, testes automatizados e ambientes cloud.',
+      'Construo interfaces robustas em <accent>React</accent> e ecossistemas de backend eficientes em <accent>Node.js e NestJS</accent>, com experiência sólida em TypeScript e arquitetura de microsserviços. Sou especialista em garantir a qualidade de software por meio de testes automatizados (Playwright, Vitest) e acessibilidade (WCAG), entregando sob metodologias ágeis.',
+      'Tenho histórico comprovado na otimização de infraestrutura cloud — redução de 81% nos custos da AWS e 50% na latência do sistema — com forte atuação em <accent>pipelines de CI/CD e deploy</accent>, incluindo deploy automatizado em ambientes cloud como Oracle Cloud. Sou ativo no uso de ferramentas de <accent>AI-Assisted Development</accent> para acelerar entregas.',
+      'Sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar e falo Português (nativo), Inglês (profissional) e Espanhol (conversacional).',
     ],
     stats: [
       { value: '3+', label: 'anos de experiência' },
@@ -51,60 +51,49 @@ export const pt: Translations = {
     // },
     items: [
       {
-        role: 'Engenheiro de Software Full Stack Pleno com Foco em Qualidade',
+        role: 'Engenheiro de Software Full Stack Principal',
         description:
-          'Participo do desenvolvimento e na garantia de qualidade dos sistemas do Grupo UND, com foco em arquitetura de testes automatizados e auditorias de performance nos stacks Nuxt 4 (Vue.js) e Laravel 12.',
+          'Responsável pelo desenvolvimento full stack de dois produtos principais: o Conecta Paraná (NestJS, Angular e Flutter) e o Orçamento Fácil (Firebase e React), liderando decisões arquiteturais, infraestrutura cloud e governança de código.',
         bullets: [
-          'Realizei auditorias de performance em Nuxt 4 (Vue.js) e Laravel 12, identificando e corrigindo gargalos críticos relacionados à complexidade algorítmica (Big O) e memory leaks em event listeners globais.',
-          'Estruturei e implantei infraestrutura de testes automatizados com Playwright (E2E) e Vitest (Unitário), integrando Mutation Testing para atingir cobertura de código efetiva acima de 80%.',
-          'Acelerei a baseline de automação em aproximadamente 60% utilizando LLMs e programação agêntica para design e execução de casos de teste complexos.',
-          'Conduzi code reviews de funcionalidades críticas e testes de API via IA (PRDs para validação de endpoints), combinando testes manuais, automatizados e assistidos por IA, aumentando a satisfação de clientes internos em 30% e reduzindo atrasos em entregas em 40%.',
+          'Liderei rotinas de code review focadas em performance e boas práticas, reduzindo em mais de 60% a incidência de bugs em produção e garantindo a consistência da base de código.',
+          'Desenhei contratos de API padronizados e implementei interceptadores globais no frontend para tratamento de erros, reduzindo o tempo de depuração em produção e melhorando a experiência do usuário.',
+          'Desenvolvi Guards customizados e decoradores reutilizáveis no NestJS para autenticação e autorização, eliminando código duplicado e acelerando a criação de novas rotas seguras.',
+          'Estruturei o ambiente Docker e pipelines de CI/CD (GitHub Actions) com deploy automatizado na Oracle Cloud, reduzindo o tempo de setup de novos desenvolvedores de dias para minutos.',
+          'Elevei a cobertura de testes do app mobile de 60% para 96% utilizando testes de mutação (Stryker), blindando fluxos críticos de negócio.',
+          'Integrei ferramentas de IA (Claude Code) ao fluxo de trabalho, otimizando o ciclo de entrega de funcionalidades complexas de semanas para menos de 2 dias.',
         ],
       },
       {
-        role: 'Engenheiro de Software Full Stack Pleno',
+        role: 'Software Development Engineer in Test (SDET) / Engenheiro de Software',
         description:
-          'Responsável pelo desenvolvimento full stack de dois produtos principais: o Conecta Paraná (guia urbano em monorepo com NestJS, Angular SPA e Flutter) e o Orçamento Fácil (aplicativo mobile para construção civil em React e Capacitor).',
+          'Atuação estratégica na garantia de qualidade, auditoria de performance e arquitetura de testes automatizados para sistemas robustos baseados em Nuxt 4 (Vue.js) e Laravel 12.',
         bullets: [
-          'Estruturei infraestrutura completa de monorepo (NestJS + Angular SPA + Flutter) com 4 ambientes Docker, CI/CD via GitHub Actions e deploy automático ARM64 em VPS Oracle, reduzindo setup de novos devs de dias para minutos.',
-          'Desenvolvi componentes Angular com RxJS para gerenciamento reativo de estado e streams de dados assíncronos, aplicando boas práticas de performance e acessibilidade (WCAG).',
-          'Utilizei Claude Code + Codex CLI para entregas contínuas, acelerando funcionalidades que levariam 2–3 semanas para menos de 2 dias de desenvolvimento, e auxiliando na configuração de CI/CD.',
-          'Elevei a cobertura de testes do projeto Orçamento Fácil (app mobile) de 60% para 96% com Stryker (Mutation Testing), garantindo cobertura de mutantes em fluxos críticos de negócio.',
-          'Integrei o Firebase ao aplicativo mobile Orçamento Fácil, desenvolvendo um sistema de auto-save automático com debounce para formulários complexos, elevando a confiabilidade da aplicação e reduzindo chamadas desnecessárias ao banco de dados.',
+          'Realizei auditorias e implementei testes de carga utilizando K6 nos ecossistemas do projeto, identificando e corrigindo gargalos de complexidade algorítmica (Big O) e memory leaks sob alta concorrência.',
+          'Estruturei e implantei a infraestrutura de testes automatizados utilizando Playwright (E2E) e Vitest (Unitários) com TypeScript, integrando testes de mutação para garantir cobertura efetiva acima de 80%.',
+          'Desenvolvi e acelerei a baseline de automação do time utilizando LLMs e programação agêntica para o design e execução autônoma de cenários de testes complexos.',
+          'Conduzi code reviews de funcionalidades críticas e validação de contratos de APIs, combinando testes assistidos por IA para reduzir atrasos em entregas e mitigar bugs.',
         ],
       },
       {
-        role: 'Engenheiro de Software Full Stack',
+        role: 'Engenheiro de Software Backend',
         description:
-          'Consultor em projetos de alta escala para clientes internacionais, focando em microsserviços, redução de custos e confiabilidade.',
-        bullets: [],
-        subProjects: [
-          {
-            bullets: [
-              'Recuperei US$ 70k anuais em receita ao mitigar erros contratuais via refatoração de cron jobs Node.js e integrações Axios/Express, reduzindo falhas em 60% e elevando a confiabilidade das tarefas em 45%.',
-              'Reduzi MTTR em 50% e garanti deploys zero downtime com GitHub Actions, Docker e Kubernetes.',
-              'Desenvolvi middlewares Node.js auth/log para padronizar a arquitetura de microsserviços, integrando 3 novos serviços no primeiro mês.',
-            ],
-          },
-          {
-            bullets: [
-              'Reduzi custos de infraestrutura AWS em 81% (US$ 3.4k/mês) via otimização de índices MongoDB e automação de limpeza de dados, permitindo downsizing de instâncias M80 → M40.',
-              'Reduzi latência em 50% com caching Redis e otimização de queries MongoDB.',
-              'Construí sistema de tickets em tempo real em React com Webhooks, reduzindo latência de atualização em 35%.',
-              'Documentei APIs via OpenAPI/Swagger, otimizando a integração e reduzindo erros pela metade.',
-            ],
-          },
+          'Atuação focada em engenharia de backend, refatoração de sistemas legados, otimização de custos de infraestrutura e design de arquitetura de microsserviços para múltiplos clientes.',
+        bullets: [
+          'Reduzi custos de infraestrutura AWS em 81% (US$ 3.4k/mês) e latência em 50% através da otimização de índices no MongoDB e automação de pipelines de limpeza, permitindo o downgrade seguro de uma instância M80 para M40.',
+          'Recuperei US$ 70k anuais em receita ao refatorar automações críticas e integrações de APIs em Node.js (Axios/Express), eliminando falhas de comunicação e erros contratuais no processamento de dados.',
+          'Desenhei e implementei a arquitetura de backend para um sistema de tickets em tempo real baseado em Webhooks e mensageria, reduzindo a latência de processamento de eventos em 35%.',
+          'Reduzi o MTTR em 50% e garanti deploys confiáveis através da orquestração de containers com Docker e Kubernetes, integrados a pipelines de CI/CD via GitHub Actions.',
         ],
       },
       {
         role: 'Instrutor de Desenvolvimento Front End',
         description:
-          'Como Instrutor Front End, mentorei turmas de desenvolvedores aspirantes em JavaScript, TypeScript e React, com foco em qualidade de código, boas práticas e aceleração do caminho para prontidão profissional.',
+          'Atuação na mentoria e aceleração profissional de desenvolvedores, com foco em qualidade de código, arquitetura frontend e preparação para o mercado de trabalho.',
         bullets: [
-          'Documentei aulas e estruturei roteiros para mentorias e workshops, apoiando o time de mentores na condução de conteúdos específicos e na resolução de dúvidas recorrentes da turma.',
-          'Mentorei desenvolvedores em JavaScript, TypeScript e React, acelerando a proficiência técnica em 40%.',
-          'Conduzi code reviews e workshops, elevando a qualidade de código de mais de 50 desenvolvedores.',
-          'Otimizei materiais e suporte via Slack, reduzindo tempo de resolução de tickets de 40 para 20 minutos.',
+          'Mentorei mais de 50 desenvolvedores no ecossistema React, TypeScript e JavaScript, acelerando a proficiência técnica do grupo em mais de 30% através de planos de estudo direcionados.',
+          'Conduzi workshops práticos e rotinas de code review, elevando o padrão de qualidade de código dos alunos de acordo com as boas práticas do mercado.',
+          'Estruturei roteiros técnicos e documentações para mentorias, padronizando o material de apoio e servindo de referência para o time de instrutores.',
+          'Otimizei o fluxo de suporte via Slack, reduzindo o tempo médio de resolução de dúvidas técnicas de 40 para 20 minutos.',
         ],
       },
     ],
