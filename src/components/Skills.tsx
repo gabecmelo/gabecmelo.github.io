@@ -8,7 +8,6 @@ import {
   SiPostgresql, SiMongodb, SiFirebase, SiPrisma,
   SiVitest,
   SiDocker, SiKubernetes, SiGithubactions, SiNginx, SiLinux,
-  SiGooglecloud,
 } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa'
 import { VscCode, VscBeaker, VscTerminalPowershell } from 'react-icons/vsc'
@@ -57,7 +56,7 @@ const skillsByGroup: SkillItem[][] = [
     { name: 'Vitest', Icon: SiVitest, color: '#6E9F18' },
     { name: 'Testing Library', Icon: SiReact, color: '#E33332' },
     { name: 'Stryker / Mutation', color: '#8b949e' },
-    { name: 'Gherkin / BDD', color: '#8b949e' },
+    { name: 'K6 (Load)', color: '#7D64FF' },
     { name: 'Pest PHP', color: '#8b949e' },
   ],
   // Cloud & DevOps
@@ -69,16 +68,14 @@ const skillsByGroup: SkillItem[][] = [
     { name: 'Nginx', Icon: SiNginx, color: '#009639' },
     { name: 'Linux', Icon: SiLinux, color: '#FCC624' },
     { name: 'Oracle Cloud', color: '#F80000' },
-    { name: 'GCP', Icon: SiGooglecloud, color: '#4285F4' },
   ],
   // AI-Assisted Dev
   [
     { name: 'Claude Code', Icon: VscCode, color: '#a855f7' },
     { name: 'Codex CLI', Icon: VscCode, color: '#8b949e' },
-    { name: 'RAG Pipelines', color: '#8b949e' },
-    { name: 'LangChain', color: '#1C3C3C' },
     { name: 'Agentic Programming', color: '#8b949e' },
     { name: 'LLMs', color: '#8b949e' },
+    { name: 'Document Grounding', color: '#8b949e' },
   ],
 ]
 
